@@ -15,8 +15,8 @@ def summ(num):
     return summa
 
 number = int(input('Введите 6-значное число: '))
-num_1 = summ(number // 1000)
-num_2 = summ(number % 1000)
+num_1 = summ(number // 1000) #сумма первых 3х цифр
+num_2 = summ(number % 1000) #сумма последних 3х цифр 
 
 if num_1 == num_2:
     print('yes this is lucky ticket')
